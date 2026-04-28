@@ -1,0 +1,27 @@
+name: RandomTrivia
+version: '1.0.0'
+
+main: Sh1nci.RandomTrivia.RandomTrivia
+api-version: '1.21'
+softdepend: [Vault]
+load: POSTWORLD
+
+commands:
+  trivia:
+    description: Manage and play the chat trivia event.
+    usage: /trivia <start|stop|skip|score|top|modules>
+    permission: randomtrivia.play
+
+permissions:
+  randomtrivia.admin:
+    description: Allows starting, stopping, and skipping trivia sessions.
+    default: op
+  randomtrivia.play:
+    description: Allows checking scores and viewing the leaderboard.
+    default: true
+  randomtrivia.play.mute:
+    description: Allows players to mute trivia broadcasts for themselves.
+    default: true
+
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:2.1.0

@@ -1,0 +1,39 @@
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Gradle and Build
+.gradle/
+build/
+bin/
+out/
+build.gradle.kts
+gradle.properties
+settings.gradle.kts
+gradlew
+gradlew.bat
+gradle/
+
+# Local Server Data (Paper/Spigot)
+run/
+plugins/
+logs/
+cache/
+world/
+world_nether/
+world_the_end/
+
+# Kotlin/JVM
+*.class
+.kotlin/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# User specific or sensitive files
+*.local
+.env
