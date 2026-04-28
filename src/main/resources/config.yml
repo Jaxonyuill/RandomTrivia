@@ -1,0 +1,59 @@
+# ══════════════════════════════════════════════════════════════════════════════
+#  Trivia Plugin — config.yml
+# ══════════════════════════════════════════════════════════════════════════════
+#
+#  The plugin will automatically pick a random question from the pool below
+#  and broadcast it to chat every `interval-seconds`.
+#  
+#  The first person to answer correctly within the time limit wins that round!
+#
+#  Permissions:
+#  - randomtrivia.admin     : Allows /trivia drop, skip, and reload (Default: OP)
+#  - randomtrivia.play      : Allows use of the base /trivia command (Default: True)
+#  - randomtrivia.play.mute : Allows players to /trivia mute broadcasts (Default: True)
+#
+# ══════════════════════════════════════════════════════════════════════════════
+
+# How often a random question drops (in seconds)
+# Set to 0 to disable auto-drops (you can still use /trivia drop)
+interval-seconds: 300
+
+# How long players have to answer before the question expires (in seconds)
+# Set to 0 to disable the time limit (questions never expire)
+# Hint shows after half the time limit
+answer-time-limit: 30
+
+# How much money the winner gets (Vault Economy)
+reward-amount: 50.0
+
+questions:
+  - question: "What command does Sung Jinwoo shout to raise shadow soldiers?"
+    answers:
+      - "Arise"
+      - "ARISE"
+
+  - question: "What is the name of Sung Jinwoo's shadow extracted from the Ant King?"
+    answers:
+      - "Beru"
+      - "Ant King Beru"
+    hint: "He was the ruler of the ants on Jeju Island."
+
+  - question: "What rank was Sung Jinwoo before the System appeared?"
+    answers:
+      - "E"
+      - "E-Rank"
+      - "E rank"
+    hint: "The absolute lowest."
+
+  - question: "What is the name of Jinwoo's guild?"
+    answers:
+      - "Ahjin Guild"
+      - "Ah-Jin Guild"
+    hint: "Named after part of his own name."
+
+  - question: "Who is the original Shadow Monarch before Sung Jinwoo?"
+    answers:
+      - "Ashborn"
+      - "The Shadow Monarch Ashborn"
+    hint: "He chose Jinwoo as his vessel."
+

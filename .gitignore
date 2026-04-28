@@ -1,0 +1,19 @@
+# Gradle
+.gradle/
+build/
+
+# Paper Run Task
+run/
+
+# Kotlin / JVM
+.kotlin/
+*.class
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
