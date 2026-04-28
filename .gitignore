@@ -1,19 +1,33 @@
-# Gradle
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Gradle and Build
 .gradle/
 build/
+bin/
+out/
 
-# Paper Run Task
+# Local Server Data (Paper/Spigot)
 run/
+plugins/
+logs/
+cache/
+world/
+world_nether/
+world_the_end/
 
-# Kotlin / JVM
-.kotlin/
+# Kotlin/JVM
 *.class
-
-# IDEs
-.idea/
-*.iml
-.vscode/
+.kotlin/
 
 # OS Files
 .DS_Store
 Thumbs.db
+
+# User specific or sensitive files
+*.local
+.env
